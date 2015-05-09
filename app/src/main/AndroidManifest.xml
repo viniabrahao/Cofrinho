@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Meta"
+            android:label="@string/title_activity_meta" >
+        </activity>
+        <activity
+            android:name=".Despesa"
+            android:label="@string/title_activity_despesa" >
+        </activity>
     </application>
 
 </manifest>

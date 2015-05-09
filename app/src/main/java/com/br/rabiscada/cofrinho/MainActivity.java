@@ -1,37 +1,51 @@
 package com.br.rabiscada.cofrinho;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.widget.*;
 import android.view.*;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
-    private Spinner Spn_Hist;
+    private Button meta;
+    private Button despesa;
 
+ @Override
 
-    private ArrayAdapter<String> adpHist;
-
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+     super.onCreate(savedInstanceState);
+     setContentView(R.layout.activity_main);
 
-        Spn_Hist = (Spinner)findViewById(R.id.Spn_Hist);
-        adpHist = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
-        adpHist.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        Spn_Hist.setAdapter(adpHist);
+     meta = (Button) findViewById(R.id.meta);
+     meta.setOnClickListener(this);
 
-
-        adpHist.add("Atual");
-        adpHist.add("Penultimo");
-        adpHist.add("AntiPenultimo");
-        adpHist.add("..");
-
+     despesa = (Button) findViewById(R.id.despesa);
+     despesa.setOnClickListener(this);
 
     }
+
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.meta:
+                Intent it = new Intent(this, Meta.class);
+                startActivity(it);
+                break;
+
+            case R.id.despesa:
+                Intent itt = new Intent(this, Despesa.class);
+                startActivity(itt);
+                break;
+
+            /*case R.id.grafico:
+                Intent it = new Intent(this, Meta.class);
+                startActivity(it);
+                break;*/
+        }
+
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
