@@ -37,8 +37,8 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
         mi1000 = (Button) findViewById(R.id.mi1000);
         mi1000.setOnClickListener(this);
 
-        miManual = (Button) findViewById(R.id.miManual);
-        miManual.setOnClickListener(this);
+      //  miManual = (Button) findViewById(R.id.miManual);
+    //    miManual.setOnClickListener(this);
 
         despSubTotal = (EditText) findViewById(R.id.despSubTotal);
     }
@@ -61,8 +61,8 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
                 adicionaValor(v, 1000);
                 break;
 
-            case R.id.miManual:
-                break;
+        //    case R.id.miManual:
+      //          break;
         }
     }
 

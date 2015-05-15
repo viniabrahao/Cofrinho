@@ -6,4 +6,5 @@
     <string name="title_activity_main_activity2">MainActivity2Activity</string>
     <string name="title_activity_meta">Meta</string>
     <string name="title_activity_despesa">Despesa</string>
+    <string name="title_activity_launcher">Launcher</string>
 </resources>

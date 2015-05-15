@@ -7,9 +7,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Spinner;
 
 
 public class Meta extends ActionBarActivity implements View.OnClickListener{
+    private Button btn_confirma;
+    private Spinner freq;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

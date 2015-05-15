@@ -18,9 +18,33 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="137dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:weightSum="1" >
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/despSubTotal"
+                android:layout_gravity="center_vertical"
+                android:text="0" />
+
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Confirmar"
+                android:id="@+id/button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_weight="1">
 
             <Button
                 android:layout_width="125dp"
@@ -40,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:text="10"
                 android:id="@+id/mi10"
-                android:layout_below="@+id/button3"
+                android:layout_below="@+id/btn_confirma"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:background="#ffff2a1a"
@@ -72,34 +96,6 @@
                 android:background="#ffff2a1a"
                 android:layout_weight="0.15"
                 android:textSize="40dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/despSubTotal"
-                android:layout_gravity="center_vertical"
-                android:text="0" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Teclado Numérico"
-                android:id="@+id/miManual"
-                android:layout_gravity="center_vertical" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Confirmar"
-                android:id="@+id/button" />
         </LinearLayout>
 
     </LinearLayout>

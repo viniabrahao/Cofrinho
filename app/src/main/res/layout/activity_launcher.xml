@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.br.rabiscada.cofrinho.Launcher">
+
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@mipmap/lanca"
+        android:nestedScrollingEnabled="false"
+        android:longClickable="false"
+        android:focusableInTouchMode="false"
+        android:baselineAlignBottom="false"
+        android:layout_alignWithParentIfMissing="true"
+        android:adjustViewBounds="false"
+        android:background="@mipmap/lanca"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop" />
+</RelativeLayout>
