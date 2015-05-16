@@ -1,6 +1,7 @@
 package com.br.rabiscada.cofrinho;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -17,8 +18,9 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
     private Button mi10;
     private Button mi100;
     private Button mi1000;
-    private Button miManual;
+    private Button btn_confirma;
     private EditText despSubTotal;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +39,8 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
         mi1000 = (Button) findViewById(R.id.mi1000);
         mi1000.setOnClickListener(this);
 
-      //  miManual = (Button) findViewById(R.id.miManual);
-    //    miManual.setOnClickListener(this);
+        btn_confirma = (Button) findViewById(R.id.btn_confirma);
+        btn_confirma.setOnClickListener(this);
 
         despSubTotal = (EditText) findViewById(R.id.despSubTotal);
     }
@@ -61,8 +63,9 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
                 adicionaValor(v, 1000);
                 break;
 
-        //    case R.id.miManual:
-      //          break;
+            case R.id.btn_confirma:
+                insereDespesa();
+                break;
         }
     }
 
@@ -96,5 +99,9 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
         int novoValor = valor + valorInt;
         valorString = String.valueOf(novoValor);
         despSubTotal.setText(valorString);
+    }
+
+    public void insereDespesa() {
+
     }
 }
