@@ -39,8 +39,8 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
         mi1000 = (Button) findViewById(R.id.mi1000);
         mi1000.setOnClickListener(this);
 
-        btn_confirma = (Button) findViewById(R.id.btn_confirma);
-        btn_confirma.setOnClickListener(this);
+        //btn_confirma = (Button) findViewById(R.id.btn_confirma);
+      //  btn_confirma.setOnClickListener(this);
 
         despSubTotal = (EditText) findViewById(R.id.despSubTotal);
     }
@@ -63,9 +63,9 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
                 adicionaValor(v, 1000);
                 break;
 
-            case R.id.btn_confirma:
-                insereDespesa();
-                break;
+          //  case R.id.btn_confirma:
+             //   insereDespesa();
+          //      break;
         }
     }
 
@@ -101,7 +101,7 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
         despSubTotal.setText(valorString);
     }
 
-    public void insereDespesa() {
+   // public void insereDespesa() {
 
-    }
+    //}
 }

@@ -24,15 +24,6 @@
             android:name=".Despesa"
             android:label="@string/title_activity_despesa" >
         </activity>
-        <activity
-            android:name=".Launcher"
-            android:label="@string/title_activity_launcher" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

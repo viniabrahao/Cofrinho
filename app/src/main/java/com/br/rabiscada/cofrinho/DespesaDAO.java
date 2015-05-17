@@ -1,4 +1,4 @@
-package com.br.rabiscada.cofrinho;
+/*package com.br.rabiscada.cofrinho;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -29,3 +29,4 @@ public class DespesaDAO extends SQLiteOpenHelper {
 
     }
 }
+*/
