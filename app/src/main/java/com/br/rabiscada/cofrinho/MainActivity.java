@@ -11,6 +11,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     private Button meta;
     private Button despesa;
+    private Button historico;
 
  @Override
 
@@ -24,24 +25,27 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
      despesa = (Button) findViewById(R.id.despesa);
      despesa.setOnClickListener(this);
 
-    }
+     historico = (Button) findViewById(R.id.historico);
+     historico.setOnClickListener(this);
+
+ }
 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.meta:
-                Intent it = new Intent(this, Meta.class);
-                startActivity(it);
+                Intent itmeta = new Intent(this, Meta.class);
+                startActivity(itmeta);
                 break;
 
             case R.id.despesa:
-                Intent itt = new Intent(this, Despesa.class);
-                startActivity(itt);
+                Intent itdespesa = new Intent(this, Despesa.class);
+                startActivity(itdespesa);
                 break;
 
-            /*case R.id.grafico:
-                Intent it = new Intent(this, Meta.class);
-                startActivity(it);
-                break;*/
+            case R.id.historico:
+                Intent ithist = new Intent(this, historico.class);
+                startActivity(ithist);
+                break;
         }
 
     }

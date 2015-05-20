@@ -24,6 +24,14 @@
             android:name=".Despesa"
             android:label="@string/title_activity_despesa" >
         </activity>
+        <activity
+            android:name=".historico"
+            android:label="@string/title_activity_historico"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.br.rabiscada.cofrinho.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

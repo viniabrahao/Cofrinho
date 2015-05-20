@@ -5,4 +5,9 @@
     <string name="title_activity_meta">Meta</string>
     <string name="title_activity_despesa">Despesa</string>
     <string name="title_activity_launcher">Launcher</string>
+    <string name="title_activity_historico">Historico</string>
+    <string name="Botao_Confirma">Confirma</string>
+    <string name="Digite_Meta">Digite a Meta</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>

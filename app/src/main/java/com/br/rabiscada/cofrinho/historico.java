@@ -1,48 +1,23 @@
 package com.br.rabiscada.cofrinho;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.Spinner;
 
 
-public class Meta extends ActionBarActivity implements View.OnClickListener{
-    private Button btn_confirma;
-    private Spinner freq;
-
-    private ArrayAdapter<String> adpfreq;
+public class historico extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_meta);
-
-        freq = (Spinner)findViewById(R.id.freq);
-
-        adpfreq = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
-        adpfreq.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        freq.setAdapter(adpfreq);
-
-        adpfreq.add("Semanalmente");
-        adpfreq.add("Mensalmente");
-        adpfreq.add("Anualmente");
+        setContentView(R.layout.activity_historico);
     }
 
-    public void onClick(View v) {
-
-
-
-    }
-
-            @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_meta, menu);
+        getMenuInflater().inflate(R.menu.menu_historico, menu);
         return true;
     }
 
