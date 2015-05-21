@@ -20,6 +20,7 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
     private Button mi1000;
     private Button btn_confirma;
     private EditText despSubTotal;
+    private int tipoDespesa;
 
 
     @Override
@@ -99,6 +100,18 @@ public class Despesa extends ActionBarActivity implements View.OnClickListener {
         int novoValor = valor + valorInt;
         valorString = String.valueOf(novoValor);
         despSubTotal.setText(valorString);
+    }
+
+    public int getValorDespesa() {
+        Editable editSubTotal = despSubTotal.getText();
+        String valorStringEdit = editSubTotal.toString();
+        int valorInt = Integer.valueOf(valorStringEdit);
+
+        return valorInt;
+    }
+
+    public int getTipoDespesa(){
+        return this.tipoDespesa;
     }
 
    // public void insereDespesa() {
